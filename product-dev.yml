@@ -1,3 +1,4 @@
+env: product-dev
 server:
   port: 8018
 # eureka注册地址
