@@ -2,7 +2,7 @@ person:
   id: 2
   name: 222
   address: shanghai
-env: order-dev18
+env: order-dev19
 server:
   port: 8088
 #eureka:
