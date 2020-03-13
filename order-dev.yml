@@ -1,7 +1,7 @@
 person:
-  id: 1
-  name: 111
-  address: beijing
+  id: 2
+  name: 222
+  address: shanghai
 env: order-dev18
 server:
   port: 8088
