@@ -1,4 +1,4 @@
-env: dev2
+env: order-dev6
 server:
   port: 8088
 #eureka:
