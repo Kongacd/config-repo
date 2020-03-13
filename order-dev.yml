@@ -1,3 +1,7 @@
+persopn:
+  id: 1
+  name: 111
+  address: 北京
 env: order-dev18
 server:
   port: 8088
