@@ -1,4 +1,4 @@
-env: product-dev23
+env: product-dev24
 server:
   port: 8089
 #eureka:
