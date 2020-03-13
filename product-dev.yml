@@ -1,40 +1,18 @@
-env: product-dev4
+env: product-dev
 server:
-  port: 8018
-# eureka注册地址
+  port: 8089
 #eureka:
 #  client:
 #    service-url:
 #      defaultZone: http://localhost:8762/eureka
-
 spring:
   datasource:
-    #   数据源基本配置
     username: root
-    password: MYSQL
+    password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3308/t110?serverTimezone=UTC
-    type: com.alibaba.druid.pool.DruidDataSource
-    #   数据源其他配置
-    initialSize: 5 #初始值
-    minIdle: 5 #多少秒后死掉
-    maxActive: 20 #最大活跃量
-    maxWait: 60000
-    timeBetweenEvictionRunsMillis: 60000
-    minEvictableIdleTimeMillis: 300000
-    validationQuery: SELECT 1 FROM DUAL
-    testWhileIdle: true
-    testOnBorrow: false
-    testOnReturn: false
-    poolPreparedStatements: true
-    #  配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
-    filters: stat,wall
-    maxPoolPreparedStatementPerConnectionSize: 20
-    useGlobalDataSourceStat: true
-    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
-  #给项目起名
+    url: jdbc:mysql://localhost:3308/pm110?serverTimezone=UTC
   application:
-    name: product
+    name: order
   jpa:
     show-sql: true
     hibernate:
@@ -45,3 +23,6 @@ spring:
     username: guest
     password: guest
     port: 5672
+PRODUCT:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
