@@ -5,7 +5,7 @@ person:
 PRODUCT:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
-env: dev2
+env: order-dev3
 server:
   port: 8019
 spring:
