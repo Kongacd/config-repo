@@ -1,11 +1,11 @@
 person:
   id: 2
   name: 222
-  address: beijing
+  address: shanghai
 PRODUCT:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
-env: order-dev5
+env: order-dev6
 server:
   port: 8019
 spring:
