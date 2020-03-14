@@ -1,4 +1,4 @@
-env: product-dev5
+env: product-dev6
 server:
   port: 8018
 spring:
