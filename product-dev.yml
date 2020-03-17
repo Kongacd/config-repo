@@ -1,6 +1,6 @@
 env: product-dev6
-server:
-  port: 8018
+#server:
+#  port: 8018
 spring:
   application:
     name: product
