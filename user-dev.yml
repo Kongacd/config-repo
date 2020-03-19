@@ -1,0 +1,45 @@
+spring:
+  datasource:
+    username: root
+    password: MYSQL
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3308/t110?serverTimezone=UTC
+    type: com.alibaba.druid.pool.DruidDataSource
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+    filters: stat,wall
+    initialSize: 5
+    maxActive: 20
+    maxPoolPreparedStatementPerConnectionSize: 20
+    maxWait: 60000
+    minEvictableIdleTimeMillis: 300000
+    minIdle: 5
+    poolPreparedStatements: true
+    testOnBorrow: false
+    testOnReturn: false
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 60000
+    useGlobalDataSourceStat: true
+    validationQuery: SELECT 1 FROM DUAL
+  redis:
+    host: 192.168.0.113
+    port: 6379
+  rabbitmq:
+    host: 192.168.0.113
+    password: guest
+    username: guest
+    port: 5672
+  application:
+    name: user
+  cloud:
+    config:
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: CONFIGSERVER
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: true
+    show-sql: true
+server:
+  port: 8021
