@@ -30,12 +30,6 @@ spring:
     port: 5672
   application:
     name: user
-  cloud:
-    config:
-      profile: dev
-      discovery:
-        enabled: true
-        service-id: CONFIGSERVER
   jpa:
     hibernate:
       ddl-auto: update
