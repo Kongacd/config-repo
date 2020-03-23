@@ -21,10 +21,10 @@ spring:
     useGlobalDataSourceStat: true
     validationQuery: SELECT 1 FROM DUAL
   redis:
-    host: 192.168.0.113
+    host: 192.168.0.114
     port: 6379
   rabbitmq:
-    host: 192.168.0.113
+    host: 192.168.0.114
     password: guest
     username: guest
     port: 5672
